@@ -7,16 +7,18 @@ Post-quantum secure communication system combining Kyber encryption with MLP-LDP
 If you use this code in your research, please cite the original paper:
 
 ```bibtex
-@article{kymlp-ldpc,
-  title={[Paper Title]},
-  author={[Authors]},
-  journal={[Journal/Conference]},
-  year={[Year]},
-  doi={[DOI if available]}
+@article{Nguyen2024LDPC,
+  author    = {Linh Nguyen and Quoc Bao Phan and Tuy Tan Nguyen},
+  title     = {Highly Reliable and Secure System with Multi-layer Parallel LDPC and Kyber for 5G Communications},
+  journal   = {IEEE Access},
+  volume    = {12},
+  pages     = {157260--157271},
+  year      = {2024},
+  month     = {October},
+  doi={10.1109/ACCESS.2024.3485875},  
 }
-```
 
-**Note:** Please replace the citation details above with the actual paper information.
+```
 
 ## Project Structure
 
@@ -175,4 +177,5 @@ Base graphs use circulant permutation matrices (CPM) with lifting sizes determin
 - Place base graph files in `BG/` folder
 - Input files go in `data/` folder
 - Results saved to `output/` folder
+
 - Supports images (PNG, JPG) and signals (TXT, CSV, binary)
