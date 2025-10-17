@@ -151,6 +151,17 @@ def run_file_processing():
     print(f"  Output: {output_path}")
     print(f"  BER: {stats['ber']:.10f}")
     print(f"  Time: {stats['processing_time']:.2f} seconds")
+    
+    # Check if errors occurred
+    if stats['ber'] > 0:
+        print("\n" + "!" * 70)
+        print("WARNING: Bit errors detected!")
+        print("!" * 70)
+        print("To improve performance, try:")
+        print("  1. Increase Eb/N0 (SNR) - Higher SNR = less noise")
+        print("  2. Increase LDPC iterations - More iterations = better decoding")
+        print("  3. Use lower code rate R (e.g., 1/2 instead of 2/3)")
+        print("!" * 70)
 
 
 def run_ber_simulation():
