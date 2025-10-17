@@ -82,11 +82,7 @@ snr_list, ber_list = system.run_ber_simulation(msg_list, snr_range)
 
 ## System Flow
 
-```
-Input → Encryption → Bit Transform → Segmentation → LDPC Encode 
-  → BPSK + AWGN Channel → LDPC Decode → De-bit Transform 
-  → Decryption → Output
-```
+![System Architecture](data/flow.png)
 
 ## Parameters
 
@@ -179,3 +175,4 @@ Base graphs use circulant permutation matrices (CPM) with lifting sizes determin
 - Results saved to `output/` folder
 
 - Supports images (PNG, JPG) and signals (TXT, CSV, binary)
+
